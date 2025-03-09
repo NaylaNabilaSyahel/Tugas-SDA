@@ -14,7 +14,7 @@
 
 ---
 
-### 🗒️ Deskripsi Singkat Program 
+### 🗒️ Deskripsi Singkat Program:
 
 Program ini adalah sitem manajemen antrean nasabah di bank yang menggunakan queue berbasis linked list untuk mengelola antrean layanan, serta stack berbasis linked list untuk menyimpan riwayat transaksi nasabah yang telah di proses.
 
@@ -101,7 +101,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 ---
         
-### 🛠️ Fitur Utama
+### 🛠️ Fitur Utama:
 
 1️⃣ **Menambahkan Nasabah ke Antrean** 📥  
    - Nasabah dapat mendaftar dengan nama dan memilih jenis layanan (Setor Tunai, Tarik Tunai, Pembukaan Rekening).  
