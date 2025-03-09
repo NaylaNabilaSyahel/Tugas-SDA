@@ -32,7 +32,7 @@ Program ini menggunakan Makefile untuk mempermudah proses kompilasi dan eksekusi
       
 ### Struktur Data yang Digunakan untuk Membangun Program Antrean Bank 🏦
 1️⃣ Queue berbasis Linked List
-   -Program ini menggunakan Queue berbasis Linked List untuk menyimpan data antrean nasabah yang sedang menunggu untuk diproses.
+   - Program ini menggunakan Queue berbasis Linked List untuk menyimpan data antrean nasabah yang sedang menunggu untuk diproses.
    Queue mengikuti prinsip FIFO (First In, First Out), sehingga nasabah yang pertama masuk akan diproses lebih dahulu.
 
 2️⃣ Stack berbasis Linked List  
