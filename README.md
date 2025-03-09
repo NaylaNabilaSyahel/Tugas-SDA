@@ -31,16 +31,6 @@ Program ini menggunakan Makefile untuk mempermudah proses kompilasi dan eksekusi
 -------------------------------
       
 ### Struktur Data yang Digunakan untuk Membangun Program Antrean Bank 🏦
-1. Queueu bebasis linked list
-   Program ini menggunakan queue berbasis linked list untuk menyimpan data antrean nasabah yang sedang menunggu untuk diproses.
-   Queue mengikuti prinsip FIFO (First In, First Out), sehingga nasabah yang pertama masuk akan diproses lebih dahulu.
-
-2. Stack berbasis linked list
-   Selain antrean, program ini juga menggunakan stack berbasis linked list untuk menyimpan transaksi nasabah yang telah diproses.
-   Stack mengikuti prinsip LIFO (Last In, First Out), sehingga transaksi terakhir yang diproses akan berada di bagian atas dan bisa 
-   dibatalkan jika diperlukan.
-
-### Struktur Data yang Digunakan untuk Membangun Program Antrean Bank 🏦
 1️⃣ Queue berbasis Linked List  
 📌 Program ini menggunakan Queue berbasis Linked List untuk menyimpan data antrean nasabah yang sedang menunggu untuk diproses.  
 📌 Queue mengikuti prinsip FIFO (First In, First Out), sehingga nasabah yang pertama masuk akan diproses lebih dahulu.
@@ -48,7 +38,7 @@ Program ini menggunakan Makefile untuk mempermudah proses kompilasi dan eksekusi
 2️⃣ Stack berbasis Linked List  
 📌 Selain antrean, program ini juga menggunakan Stack berbasis Linked List untuk menyimpan transaksi nasabah yang telah diproses.  
 📌 Stack mengikuti prinsip LIFO (Last In, First Out), sehingga transaksi terakhir yang diproses akan berada di bagian atas dan bisa dibatalkan jika diperlukan.
-
+  
 -------------------------------   
 
 ### Alasan Pemilihan Struktur Data:
