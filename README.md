@@ -19,15 +19,6 @@ Program ini adalah sitem manajemen antrean nasabah di bank yang menggunakan queu
 
 -------------------------------
 
-### Instruksi compilasi dan cara menjalankan program:
-Program ini menggunakan Makefile untuk mempermudah proses kompilasi dan eksekusi.
-- Jalankan perintah berikut di terminal: Make
-  📌 Perintah ini akan mengompilasi semua file sumber dan menghasilkan file eksekusi mainSda.
-- Setelah berhasil dikompilasi, jalankan program dengan: ./mainSda
-  📌 Pastikan file mainSda telah dibuat sebelum menjalankan perintah ini.
-- Jika ingin menghapus file eksekusi dan file .o untuk kompilasi ulang, gunakan perintah: Make clean
-  📌 Perintah ini akan menghapus file yang dihasilkan dari kompilasi sebelumnya.
-
 ### 📌 Instruksi Kompilasi dan Cara Menjalankan Program:
 
 Program ini menggunakan **Makefile** untuk mempermudah proses kompilasi dan eksekusi.
@@ -49,26 +40,30 @@ Program ini menggunakan **Makefile** untuk mempermudah proses kompilasi dan ekse
   make clean
   ```
   📌 Perintah ini akan menghapus file yang dihasilkan dari kompilasi sebelumnya.
+  
 -------------------------------
       
-### Struktur Data yang Digunakan untuk Membangun Program Antrean Bank 🏦
-1️⃣ Queue berbasis Linked List
-   - Program ini menggunakan Queue berbasis Linked List untuk menyimpan data antrean nasabah yang sedang menunggu untuk diproses.
-   Queue mengikuti prinsip FIFO (First In, First Out), sehingga nasabah yang pertama masuk akan diproses lebih dahulu.
+### 🏦 Struktur Data yang Digunakan untuk Membangun Program Antrean Bank:
 
-2️⃣ Stack berbasis Linked List
-   - Selain antrean, program ini juga menggunakan Stack berbasis Linked List untuk menyimpan transaksi nasabah yang telah diproses.
-   Stack mengikuti prinsip LIFO (Last In, First Out), sehingga transaksi terakhir yang diproses akan berada di bagian atas dan bisa dibatalkan jika diperlukan.
+🔹 **Queue berbasis Linked List** 🔗
+   - Program ini menggunakan **Queue berbasis Linked List** untuk menyimpan data antrean nasabah yang sedang menunggu untuk diproses.
+   - Queue mengikuti prinsip **FIFO (First In, First Out)**, sehingga nasabah yang pertama masuk akan diproses lebih dahulu.
+
+🔹 **Stack berbasis Linked List** 🔗
+   - Selain antrean, program ini juga menggunakan **Stack berbasis Linked List** untuk menyimpan transaksi nasabah yang telah diproses.
+   - Stack mengikuti prinsip **LIFO (Last In, First Out)**, sehingga transaksi terakhir yang diproses akan berada di bagian atas dan bisa dibatalkan jika diperlukan.
   
 -------------------------------   
 
-### Alasan Pemilihan Struktur Data:
-Queue dan Stack diimplementasikan menggunakan Linked List karena:
-✅ Fleksibel – Tidak memiliki batasan ukuran seperti array, cocok untuk antrean yang jumlahnya tidak dapat diprediksi.
-✅ Efisien dalam penambahan & penghapusan – Operasi enqueue, dequeue, push, dan pop dapat dilakukan dalam O(1) waktu tanpa perlu geser elemen seperti pada array.
-✅ Cocok untuk sistem antrean bank – Karena jumlah nasabah yang antre bisa terus bertambah atau berkurang, sehingga penggunaan memori lebih efisien.
+### 🤔 Alasan Pemilihan Struktur Data:
+
+Queue dan Stack diimplementasikan menggunakan **Linked List** karena:
+
+✅ **Fleksibel** – Tidak memiliki batasan ukuran seperti array, cocok untuk antrean yang jumlahnya tidak dapat diprediksi.
+✅ **Efisien** dalam penambahan & penghapusan – Operasi enqueue, dequeue, push, dan pop dapat dilakukan dalam O(1) waktu tanpa perlu geser elemen seperti pada array.
+✅ **Cocok untuk sistem antrean bank** – Karena jumlah nasabah yang antre bisa terus bertambah atau berkurang, sehingga penggunaan memori lebih efisien.
    
-Struktur data stack dan qeueu dipilih diimplementasikan menggunakan linked list, sebab ukuran linked list tidak terbatas 
+Struktur data **stack** dan **qeueu** dipilih diimplementasikan menggunakan linked list, sebab ukuran linked list tidak terbatas 
 selama memori masih tersedia, hal ini sesuai sesuai dengan konsep antrean bank, karena banyaknya antrean dalam bank tidak dapat di tentukan sehingga akan sangat tidak efisien jiga diimplementasikan menggunakan array. Sehingga linked list menjadi solusi
 yang sangat cocok dalam program ini.
 
