@@ -1,8 +1,6 @@
 # 📚 Tugas Kelompok Praktikum Struktur Data dan Algoritma 📚
 ## Sistem Antrean Bank 💰 
 ---
--------------------------------
-
 
 ### Anggota Kelompok 4:
 | Nama                   | NPM           |
@@ -20,7 +18,7 @@
 
 Program ini adalah sitem manajemen antrean nasabah di bank yang menggunakan queue berbasis linked list untuk mengelola antrean layanan, serta stack berbasis linked list untuk menyimpan riwayat transaksi nasabah yang telah di proses.
 
--------------------------------
+---
 
 ### 📌 Instruksi Kompilasi dan Cara Menjalankan Program:
 
@@ -44,7 +42,7 @@ Program ini menggunakan **Makefile** untuk mempermudah proses kompilasi dan ekse
   ```
   📌 Perintah ini akan menghapus file yang dihasilkan dari kompilasi sebelumnya.
   
--------------------------------
+---
       
 ### 🏦 Struktur Data yang Digunakan untuk Membangun Program Antrean Bank:
 
@@ -56,7 +54,7 @@ Program ini menggunakan **Makefile** untuk mempermudah proses kompilasi dan ekse
    - Selain antrean, program ini juga menggunakan **Stack berbasis Linked List** untuk menyimpan transaksi nasabah yang telah diproses.
    - Stack mengikuti prinsip **LIFO (Last In, First Out)**, sehingga transaksi terakhir yang diproses akan berada di bagian atas dan bisa dibatalkan jika diperlukan.
   
--------------------------------   
+---
 
 ### 🤔 Alasan Pemilihan Struktur Data:
 
@@ -68,7 +66,7 @@ Queue dan Stack diimplementasikan menggunakan **Linked List** karena:
 
 Struktur data **Stack** dan **Queue** dipilih untuk diimplementasikan menggunakan **Linked List**, sebab ukuran Linked List tidak terbatas selama memori masih tersedia. Hal ini sesuai dengan konsep antrean bank, karena banyaknya antrean dalam bank tidak dapat ditentukan. Sehingga akan sangat tidak efisien jika diimplementasikan menggunakan array. Oleh karena itu, **Linked List menjadi solusi yang sangat cocok dalam program ini.**
 
--------------------------------
+---
 
 ### ⚙️ Implementasi Struktur Data:
 
@@ -101,7 +99,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
    - Nasabah pertama yang diproses akan ditampilkan lebih dahulu.
    - Jika tidak ada nasabah yang telah dilayani, sistem akan menampilkan pesan **"Riwayat kosong"**.
 
--------------------------------
+---
         
 ### Fitur Utama:
 
