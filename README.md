@@ -101,7 +101,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 ---
         
-### Fitur Utama:
+### 🛠️ Fitur Utama
 
 1️⃣ **Menambahkan Nasabah ke Antrean** 📥  
    - Nasabah dapat mendaftar dengan nama dan memilih jenis layanan (Setor Tunai, Tarik Tunai, Pembukaan Rekening).  
