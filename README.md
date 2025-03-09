@@ -28,6 +28,27 @@ Program ini menggunakan Makefile untuk mempermudah proses kompilasi dan eksekusi
 - Jika ingin menghapus file eksekusi dan file .o untuk kompilasi ulang, gunakan perintah: Make clean
   📌 Perintah ini akan menghapus file yang dihasilkan dari kompilasi sebelumnya.
 
+### 📌 Instruksi Kompilasi dan Cara Menjalankan Program:
+
+Program ini menggunakan **Makefile** untuk mempermudah proses kompilasi dan eksekusi.
+
+- Jalankan perintah berikut di terminal:  
+  ```sh
+  make
+  ```
+  📌 Perintah ini akan mengompilasi semua file sumber dan menghasilkan file eksekusi `mainSda`.
+
+- Setelah berhasil dikompilasi, jalankan program dengan:  
+  ```sh
+  ./mainSda
+  ```
+  📌 Pastikan file `mainSda` telah dibuat sebelum menjalankan perintah ini.
+
+- Jika ingin menghapus file eksekusi dan file `.o` untuk kompilasi ulang, gunakan perintah:  
+  ```sh
+  make clean
+  ```
+  📌 Perintah ini akan menghapus file yang dihasilkan dari kompilasi sebelumnya.
 -------------------------------
       
 ### Struktur Data yang Digunakan untuk Membangun Program Antrean Bank 🏦
