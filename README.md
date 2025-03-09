@@ -1,6 +1,8 @@
 # 📚 Tugas Kelompok Praktikum Struktur Data dan Algoritma 📚
 ## Sistem Antrean Bank 💰 
 ---
+-------------------------------
+
 
 ### Anggota Kelompok 4:
 | Nama                   | NPM           |
