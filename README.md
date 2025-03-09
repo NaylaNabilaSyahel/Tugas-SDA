@@ -14,7 +14,7 @@
 
 ---
 
-### Deskripsi Program :spiral_notepad:
+### Deskripsi Singkat Program :spiral_notepad:
 Program ini adalah sitem manajemen antrean nasabah di bank yang menggunakan queue berbasis linked list untuk mengelola antrean layanan, serta stack berbasis linked list untuk menyimpan riwayat transaksi nasabah yang telah di proses.
 
 -------------------------------
@@ -59,13 +59,11 @@ Program ini menggunakan **Makefile** untuk mempermudah proses kompilasi dan ekse
 
 Queue dan Stack diimplementasikan menggunakan **Linked List** karena:
 
-✅ **Fleksibel** – Tidak memiliki batasan ukuran seperti array, cocok untuk antrean yang jumlahnya tidak dapat diprediksi.
-✅ **Efisien** dalam penambahan & penghapusan – Operasi enqueue, dequeue, push, dan pop dapat dilakukan dalam O(1) waktu tanpa perlu geser elemen seperti pada array.
-✅ **Cocok untuk sistem antrean bank** – Karena jumlah nasabah yang antre bisa terus bertambah atau berkurang, sehingga penggunaan memori lebih efisien.
-   
-Struktur data **stack** dan **qeueu** dipilih diimplementasikan menggunakan linked list, sebab ukuran linked list tidak terbatas 
-selama memori masih tersedia, hal ini sesuai sesuai dengan konsep antrean bank, karena banyaknya antrean dalam bank tidak dapat di tentukan sehingga akan sangat tidak efisien jiga diimplementasikan menggunakan array. Sehingga linked list menjadi solusi
-yang sangat cocok dalam program ini.
+✅ **Fleksibel** – Tidak memiliki batasan ukuran seperti array, cocok untuk antrean yang jumlahnya tidak dapat diprediksi.  
+✅ **Efisien dalam penambahan & penghapusan** – Operasi enqueue, dequeue, push, dan pop dapat dilakukan dalam **O(1)** waktu tanpa perlu menggeser elemen seperti pada array.  
+✅ **Cocok untuk sistem antrean bank** – Karena jumlah nasabah yang antre bisa terus bertambah atau berkurang, sehingga penggunaan memori lebih efisien.  
+
+Struktur data **Stack** dan **Queue** dipilih untuk diimplementasikan menggunakan **Linked List**, sebab ukuran Linked List tidak terbatas selama memori masih tersedia. Hal ini sesuai dengan konsep antrean bank, karena banyaknya antrean dalam bank tidak dapat ditentukan. Sehingga akan sangat tidak efisien jika diimplementasikan menggunakan array. Oleh karena itu, **Linked List menjadi solusi yang sangat cocok dalam program ini.**
 
 -------------------------------
 
