@@ -1,4 +1,4 @@
-# :books: TUGAS KELOMPOK PRAKTIKUM STRUKTUR DATA DAN ALGORITMA :books:
+# :books: Tugas Kelompok Praktikum Struktur Data dan Algoritma :books:
 ## Sistem Antrean Bank :moneybag: 
 
 ### Anggota Kelompok 4:
