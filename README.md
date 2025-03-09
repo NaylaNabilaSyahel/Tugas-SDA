@@ -14,7 +14,8 @@
 
 ---
 
-### Deskripsi Singkat Program :spiral_notepad:
+### 🗒️ Deskripsi Singkat Program 
+
 Program ini adalah sitem manajemen antrean nasabah di bank yang menggunakan queue berbasis linked list untuk mengelola antrean layanan, serta stack berbasis linked list untuk menyimpan riwayat transaksi nasabah yang telah di proses.
 
 -------------------------------
@@ -67,39 +68,36 @@ Struktur data **Stack** dan **Queue** dipilih untuk diimplementasikan menggunaka
 
 -------------------------------
 
-### Implementasi Struktur Data
-1. Queueu berbasis linked list
-   Dalam program antrean nasabah queue diimplementasikan untuk melakukan beberapa proses berikut:
-   a. enqueu(); Menambahkan nasabah ke daftar antrean. Nasabah ditambahkan dari belakang sesuai dengan konsep antrian pada kehiudpan nyata
-      sehingga proses pelayanan dilakukan teratur sesuai dengan urutan antrean nasabah.
-   b. dequeu(); Menghapus nasabah dari antrean setelah selesai di proses. Penghapusan nasabah dilakukan dari depan sesuai dengan konsep inqueu, setelah dilakukan penghapusan nasabah, maka               nasabah yang berada di urutan sebelumnya akan di set untuk menajadi nasabah
-      yang harus di proses berikutnya.
-   c. tampilkanAntrian (); Menampilkan daftar antrian yang menunggu untuk dilayani.
-      - Data antrian yang menunggu dilayani ditampilkan sesuai dengan daftar antrean nasabah,
-        nasabah yang pertama masuk akan berada diurutan pertama antrean.
-      - Antrean selalu diperbaharui, sehingga setelah satu nasabah selesai dilayani, nasabah berikutnya akan maju ke posisi paling depan.
-      - Jika tidak ada nasabah dalam antrean, sistem akan menampilkan pesan "A ntrean kosong" dalam tabel. 
+### ⚙️ Implementasi Struktur Data:
 
-3. Stack berbasis linked list
-   Dalam program antrean nasabah stack diimplementasikan untuk melakukan beberapa proses berikut:
-   a. pop(); Menambahkan nasabah ke daftar riwayat layanan
-      - ketika seorang nasabah telah selesai dilayani (dikeluarkan dari antrean queue), data nasabah tersebut akan dimasukkan
-        ke dalam stack.
-      - Penambahan dilakukan dari arah depan (top), sehinngga data nasabah terakhir yang siap dilayani akan selalu berada di posisi
-        paling atas.
-      - posisi top akan selalu di update ketika  proses penambahkan nasabah dilakukan.5r
-   b. push() atau di program dinamakan undoTransaksi; Menghapus data nasabah dari riwayat layanan
-      - Data nasabah yang terakhir masuk ke daftar riwayat layanan akan di hapus (dikemablikan lagi ke datar antrean).
-      - Penghapusan dilakukan dari posisi top sehingga nasabah yang terakhir masuk akan di hapus  lebih dulu.
-      - Nasabah yang dihapus dikembalikan lagi ke daftar antrean seperti sebelumnya, kembali menjadi top dalam daftar antrean.
-   c. tampilkanRiwayat(); Menampilkan riwayat nasabah yang telah selesai di proses
-      - setiap nasabah yang telah selesai diproses akan dipindahkan ke dalam riwayat layanan yang ditampilkan dalam urutan
-        yang sesuai dengan wkatu pelayanan.
-      - Nasabah yang pertama diproses akan ditampilkan lebih dahulu, karena riwayat layanan ini disusun agar mudah dibaca dalam urutan     
-        yang benar.
-      - Data riwayat tetap disimpan meskipun antrean utama terus berjalan, sehingga dapat digunakan untuk melihat daftra layanan yang
-        sudah dilakukan.
-      - Jika tidak ada nasabah yang telah dilayani sistem akan menampilkan pesan " Riwayat kosong" dalam tabel.
+#### 🔹 Queue berbasis Linked List
+Dalam program antrean nasabah, **Queue** diimplementasikan untuk melakukan beberapa proses berikut:
+
+⓵ **enqueue()** – Menambahkan nasabah ke daftar antrean.
+   - Nasabah ditambahkan dari belakang sesuai dengan konsep antrean dalam kehidupan nyata, sehingga proses pelayanan dilakukan teratur.
+
+⓶ **dequeue()** – Menghapus nasabah dari antrean setelah selesai diproses.
+   - Penghapusan nasabah dilakukan dari depan sesuai dengan konsep FIFO.
+   - Setelah penghapusan, nasabah berikutnya akan diproses.
+
+⓷ **tampilkanAntrian()** – Menampilkan daftar antrean yang menunggu untuk dilayani.
+   - Data antrean ditampilkan sesuai dengan urutan masuk.
+   - Jika antrean kosong, sistem akan menampilkan pesan **"Antrean kosong"**.
+
+#### 🔹 Stack berbasis Linked List
+Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beberapa proses berikut:
+
+⓵ **pop()** – Menambahkan nasabah ke daftar riwayat layanan.
+   - Ketika seorang nasabah telah selesai dilayani (dikeluarkan dari Queue), data nasabah tersebut akan dimasukkan ke dalam **Stack**.
+   - Penambahan dilakukan dari **atas (top)**, sehingga data terakhir yang masuk selalu berada di posisi paling atas.
+
+⓶ **push() / undoTransaksi** – Menghapus data nasabah dari riwayat layanan.
+   - Data nasabah terakhir yang masuk ke daftar riwayat layanan akan dihapus dan dikembalikan ke daftar antrean.
+   - Penghapusan dilakukan dari posisi **top**, mengikuti konsep **LIFO**.
+
+⓷ **tampilkanRiwayat()** – Menampilkan riwayat nasabah yang telah selesai diproses.
+   - Nasabah pertama yang diproses akan ditampilkan lebih dahulu.
+   - Jika tidak ada nasabah yang telah dilayani, sistem akan menampilkan pesan **"Riwayat kosong"**.
 
 -------------------------------
         
