@@ -14,7 +14,7 @@
 
 ---
 
-### Deskripsi Program
+### Deskripsi Program :spiral_notepad:
 Program Sistem Antrean Bank ini dibuat menggunakan bahasa C dan berfungsi untuk mengelola antrean nasabah yang datang ke bank. Sistem ini menggunakan queue (antrean) untuk mengatur nasabah yang sedang menunggu layanan dan stack (tumpukan) untuk menyimpan riwayat transaksi.
 
 -------------------------------
