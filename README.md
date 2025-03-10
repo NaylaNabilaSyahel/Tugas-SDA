@@ -95,33 +95,6 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 ---
         
-### 🛠️ Fitur Utama:
-
-1️⃣ **Menambahkan Nasabah ke Antrean** 📥  
-   - Nasabah dapat mendaftar dengan nama dan memilih jenis layanan (Setor Tunai, Tarik Tunai, Pembukaan Rekening).  
-   
-2️⃣ **Memproses Nasabah** 🔄  
-   - Nasabah yang berada di antrean paling depan akan diproses dan dipindahkan ke **riwayat layanan**.  
-
-3️⃣ **Menampilkan Antrean Saat Ini** 📋  
-   - Menampilkan daftar nasabah yang masih dalam antrean.  
-
-4️⃣ **Menampilkan Riwayat Layanan** 📜  
-   - Menampilkan daftar nasabah yang sudah dilayani.  
-
-5️⃣ **Batalkan Transaksi Terakhir (Undo)** ⏪  
-   - Mengembalikan nasabah yang sudah diproses ke antrean.  
-
-6️⃣ **Menyimpan Data ke File** 💾  
-   - Antrean dan riwayat layanan dapat disimpan ke file (`antrean.txt` & `riwayat.txt`).  
-
-7️⃣ **Memuat Data dari File** 📂  
-   - Data antrean dan riwayat bisa dimuat kembali dari file untuk melanjutkan sesi sebelumnya.  
-
-8️⃣ **Keluar dari Program** ❌  
-
----
-
 ### 🔍 Kendala dan Solusi dalam Program Antrean Bank:
 
 ➊ Kendala dalam Pengelolaan Antrean (Queue)
@@ -226,6 +199,35 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
      
    - ✅ **Solusi:**
      
-     Menggunakan Makefile untuk mempermudah kompilasi hanya dengan menjalankan perintah make, lalu menjalankan program dengan ./mainSda.
+     Menggunakan Makefile untuk mempermudah kompilasi hanya dengan menjalankan perintah make, lalu menjalankan program dengan
+     ```sh
+     ./mainSda
+     ```
+     ---
+
+     ### 🛠️ Fitur Utama:
+
+1️⃣ **Menambahkan Nasabah ke Antrean** 📥  
+   - Nasabah dapat mendaftar dengan nama dan memilih jenis layanan (Setor Tunai, Tarik Tunai, Pembukaan Rekening).  
+   
+2️⃣ **Memproses Nasabah** 🔄  
+   - Nasabah yang berada di antrean paling depan akan diproses dan dipindahkan ke **riwayat layanan**.  
+
+3️⃣ **Menampilkan Antrean Saat Ini** 📋  
+   - Menampilkan daftar nasabah yang masih dalam antrean.  
+
+4️⃣ **Menampilkan Riwayat Layanan** 📜  
+   - Menampilkan daftar nasabah yang sudah dilayani.  
+
+5️⃣ **Batalkan Transaksi Terakhir (Undo)** ⏪  
+   - Mengembalikan nasabah yang sudah diproses ke antrean.  
+
+6️⃣ **Menyimpan Data ke File** 💾  
+   - Antrean dan riwayat layanan dapat disimpan ke file (`antrean.txt` & `riwayat.txt`).  
+
+7️⃣ **Memuat Data dari File** 📂  
+   - Data antrean dan riwayat bisa dimuat kembali dari file untuk melanjutkan sesi sebelumnya.  
+
+8️⃣ **Keluar dari Program** ❌  
 
 
