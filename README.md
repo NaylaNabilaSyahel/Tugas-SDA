@@ -236,6 +236,9 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 ![Screenshot 2025-03-10 131409](https://github.com/user-attachments/assets/b0d146e3-5d92-42f0-9e9e-106a2e06efac)
 
+![Screenshot 2025-03-10 131737](https://github.com/user-attachments/assets/83065517-f3a0-4dc9-b04b-34a6fdcbd652)
+
+
 
 
 
