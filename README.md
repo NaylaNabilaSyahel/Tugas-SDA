@@ -223,13 +223,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 5️⃣ **Batalkan Transaksi Terakhir (Undo)** ⏪  
    - Mengembalikan nasabah yang sudah diproses ke antrean.  
 
-6️⃣ **Menyimpan Data ke File** 💾  
-   - Antrean dan riwayat layanan dapat disimpan ke file (`antrean.txt` & `riwayat.txt`).  
-
-7️⃣ **Memuat Data dari File** 📂  
-   - Data antrean dan riwayat bisa dimuat kembali dari file untuk melanjutkan sesi sebelumnya.  
-
-8️⃣ **Keluar dari Program** ❌  
+6️⃣ **Keluar dari Program** ❌  
 
 ---
 
