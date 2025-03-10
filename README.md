@@ -125,97 +125,106 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 ### 🔍 Kendala dan Solusi dalam Program Antrean Bank:
 
 ➊ Kendala dalam Pengelolaan Antrean (Queue)
-   - 💡Masalah:
+
+   - 💡**Masalah:**
      
       Nasabah yang telah selesai diproses dihapus dari antrean, tetapi data nasabah yang telah diproses tidak tersimpan.
       Tidak ada mekanisme untuk membatalkan proses nasabah yang sudah dikeluarkan dari antrean.
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Implementasi Stack (Riwayat Layanan) untuk menyimpan nasabah yang telah diproses.
       Menambahkan fitur Undo Transaksi menggunakan pop() untuk memungkinkan pembatalan transaksi dan mengembalikan nasabah ke antrean utama.
 
 ➋ Kendala dalam Alokasi Memori
 
-   - 💡 Masalah:
+   - 💡 **Masalah:**
      
       Karena menggunakan linked list, jika tidak dikelola dengan baik, memori bisa bocor (memory leak) akibat node yang tidak dibebaskan setelah digunakan.
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Menggunakan free() untuk menghapus node setelah nasabah dikeluarkan dari antrean atau stack.
       Menambahkan fungsi clearQueue() dan clearStack() untuk membersihkan semua node sebelum program berakhir.
 
 ➌ Menampilkan Riwayat dalam Urutan Kronologis
 
-   - 💡 Masalah:
+   - 💡 **Masalah:**
      
       Riwayat transaksi disimpan dalam stack yang bersifat LIFO (Last-In-First-Out), sehingga urutan tampil terbalik (terbaru ke terlama).
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Gunakan stack sementara untuk membalikkan urutan:
+     
       1️⃣ Pindahkan semua data dari stack utama ke stack sementara.
+     
       2️⃣ Tampilkan data dari stack sementara, yang kini dalam urutan kronologis.
+     
       3️⃣ Kembalikan data ke stack utama agar tidak mengubah struktur aslinya.
 
 ➍ Sinkronisasi Antrean dan Riwayat
 
-   - 💡 Masalah:
+   - 💡 **Masalah:**
       Setelah undo, nomor antrean bisa menjadi tidak berurutan.
       Data harus tetap sinkron antara antrean (nasabah aktif) dan stack (riwayat layanan).
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Gunakan renumberQueue untuk memastikan nomor antrean tetap berurutan setelah perubahan.
       Saat nasabah diproses (deQueue), datanya dipindahkan ke stack. Jika undo dilakukan, data diambil dari stack dan dikembalikan ke antrean.
 
 ➎ Penanganan Kesalahan dan Stabilitas Program
 
-   - 💡 Masalah:
+   - 💡 **Masalah:**
      
       Program bisa mengalami gagal alokasi memori saat malloc tidak berhasil.
       Operasi yang tidak valid, seperti menghapus antrean kosong, bisa menyebabkan error.
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Cek hasil alokasi memori (malloc/strdup). Jika gagal, tampilkan pesan error agar pengguna tahu ada masalah.
       Cegah error kritis dengan:
+     
       🔹 Menampilkan peringatan "Antrean kosong!" saat pengguna mencoba menghapus antrean yang sudah habis.
+     
       🔹 Memeriksa kondisi isEmpty() sebelum melakukan operasi yang membutuhkan data, seperti menghapus antrean atau mengambil data dari stack.
 
 ➏ Validasi Input
 
-   - 💡 Masalah:
+   - 💡 **Masalah:**
      
       Input nama nasabah harus hanya berisi huruf dan spasi.
       Kesalahan input pada pilihan menu, seperti memasukkan huruf atau simbol yang tidak valid.
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Untuk mengatasi masalah ini, program menerapkan fungsi validasi khusus:
+     
       o isValidName: Memeriksa nama hanya berisi huruf dan spasi menggunakan isalpha.
+     
       o isValidNumber: Memastikan input angka menggunakan isdigit.
+     
       o Membersihkan buffer input setelah memasukkan data agar tidak terjadi kesalahan saat membaca input berikutnya.
 
 ➐ Format Antarmuka Pengguna
 
-   - 💡 Masalah:
+   - 💡 **Masalah:**
      
       Menampilkan data antrean dan riwayat dalam format tabel yang rapi.
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
       Gunakan format printf dengan spesifikasi seperti %-4d (untuk nomor) dan %-50s (untuk nama) untuk merapikan kolom.
       Tambahkan garis pemisah (contoh: ===================) untuk kejelasan visual.
  
  ➑ Kendala dalam Efisiensi Kompilasi dan Eksekusi
  
-   - 💡 Masalah:
+   - 💡 **Masalah:**
      
       Setiap kali ingin menjalankan program, pengguna harus mengetik perintah kompilasi yang panjang secara manual.
      
-   - ✅ Solusi:
+   - ✅ **Solusi:**
      
      Menggunakan Makefile untuk mempermudah kompilasi hanya dengan menjalankan perintah make, lalu menjalankan program dengan ./mainSda.
 
