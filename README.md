@@ -126,4 +126,73 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 8️⃣ **Keluar dari Program** ❌  
 
+---
+
+### 🔍 Kendala dan Solusi dalam Program Antrean Bank:
+
+➊ Kendala dalam Pengelolaan Antrean (Queue)
+   - 💡Masalah:
+      Nasabah yang telah selesai diproses dihapus dari antrean, tetapi data nasabah yang telah diproses tidak tersimpan.
+      Tidak ada mekanisme untuk membatalkan proses nasabah yang sudah dikeluarkan dari antrean.
+   - ✅ Solusi:
+      Implementasi Stack (Riwayat Layanan) untuk menyimpan nasabah yang telah diproses.
+      Menambahkan fitur Undo Transaksi menggunakan pop() untuk memungkinkan pembatalan transaksi dan mengembalikan nasabah ke antrean utama.
+
+2.  Kendala dalam Alokasi Memori
+💡 Masalah:
+Karena menggunakan linked list, jika tidak dikelola dengan baik, memori bisa bocor (memory leak) akibat node yang tidak dibebaskan setelah digunakan.
+✅ Solusi:
+Menggunakan free() untuk menghapus node setelah nasabah dikeluarkan dari antrean atau stack.
+Menambahkan fungsi clearQueue() dan clearStack() untuk membersihkan semua node sebelum program berakhir.
+
+3.  Menampilkan Riwayat dalam Urutan Kronologis
+💡 Masalah:
+Riwayat transaksi disimpan dalam stack yang bersifat LIFO (Last-In-First-Out), sehingga urutan tampil terbalik (terbaru ke terlama).
+✅ Solusi:
+Gunakan stack sementara untuk membalikkan urutan:
+1️⃣ Pindahkan semua data dari stack utama ke stack sementara.
+2️⃣ Tampilkan data dari stack sementara, yang kini dalam urutan kronologis.
+3️⃣ Kembalikan data ke stack utama agar tidak mengubah struktur aslinya.
+
+4.  Sinkronisasi Antrean dan Riwayat
+💡 Masalah:
+Setelah undo, nomor antrean bisa menjadi tidak berurutan.
+Data harus tetap sinkron antara antrean (nasabah aktif) dan stack (riwayat layanan).
+✅ Solusi:
+Gunakan renumberQueue untuk memastikan nomor antrean tetap berurutan setelah perubahan.
+Saat nasabah diproses (deQueue), datanya dipindahkan ke stack. Jika undo dilakukan, data diambil dari stack dan dikembalikan ke antrean.
+
+5. Penanganan Kesalahan dan Stabilitas Program
+💡 Masalah:
+Program bisa mengalami gagal alokasi memori saat malloc tidak berhasil.
+Operasi yang tidak valid, seperti menghapus antrean kosong, bisa menyebabkan error.
+✅ Solusi:
+Cek hasil alokasi memori (malloc/strdup). Jika gagal, tampilkan pesan error agar pengguna tahu ada masalah.
+Cegah error kritis dengan:
+🔹 Menampilkan peringatan "Antrean kosong!" saat pengguna mencoba menghapus antrean yang sudah habis.
+🔹 Memeriksa kondisi isEmpty() sebelum melakukan operasi yang membutuhkan data, seperti menghapus antrean atau mengambil data dari stack.
+
+6. Validasi Input
+🔴 Kendala:
+Input nama nasabah harus hanya berisi huruf dan spasi.
+Kesalahan input pada pilihan menu, seperti memasukkan huruf atau simbol yang tidak valid.
+✅ Solusi:
+Untuk mengatasi masalah ini, program menerapkan fungsi validasi khusus:
+ o isValidName: Memeriksa nama hanya berisi huruf dan spasi menggunakan isalpha.
+ o isValidNumber: Memastikan input angka menggunakan isdigit.
+ o Membersihkan buffer input setelah memasukkan data agar tidak terjadi kesalahan saat membaca input berikutnya.
+
+7. Format Antarmuka Pengguna
+Kendala
+Menampilkan data antrean dan riwayat dalam format tabel yang rapi.
+Solusi
+Gunakan format printf dengan spesifikasi seperti %-4d (untuk nomor) dan %-50s (untuk nama) untuk merapikan kolom.
+Tambahkan garis pemisah (contoh: ===================) untuk kejelasan visual.
+ 
+8. Kendala dalam Efisiensi Kompilasi dan Eksekusi
+💡 Masalah:
+Setiap kali ingin menjalankan program, pengguna harus mengetik perintah kompilasi yang panjang secara manual.
+✅ Solusi:
+Menggunakan Makefile untuk mempermudah kompilasi hanya dengan menjalankan perintah make, lalu menjalankan program dengan ./mainSda.
+
 
