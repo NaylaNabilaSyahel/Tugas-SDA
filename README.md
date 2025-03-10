@@ -243,7 +243,25 @@ Saat program dijalankan, pengguna disambut dengan pesan berikut
 
 **🖥️ Antarmuka Program**
 
+Saat program dijalankan, pengguna akan disambut dengan antarmuka yang sederhana dan informatif. 
+
 ![Screenshot 2025-03-10 135540](https://github.com/user-attachments/assets/87ee314a-758c-409c-85b7-be7b75bf3f27)
+
+### Pilihan 1
+
+Menambahkan nasabah ke daftar antrean
+
+![Screenshot 2025-03-10 135801](https://github.com/user-attachments/assets/82fde52c-5a68-4e32-b7b9-f17f39cd3aab)
+
+### Pilihan 2
+
+Memproses nasabah 
+
+![Screenshot 2025-03-10 140328](https://github.com/user-attachments/assets/2f6ca916-18ad-41b3-a43c-187c485b2d2d)
+
+
+
+
 
 
 
