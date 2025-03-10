@@ -289,7 +289,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 - Sebelum program keluar, semua memori yang digunakan untuk menyimpan data nasabah akan dibersihkan secara otomatis. Ini dilakukan untuk mencegah kebocoran memori (memory leak), sehingga sumber 
   daya komputer tetap optimal dan tidak ada memori yang terbuang sia-sia.
 ---
-
+---
 
 
 
