@@ -232,7 +232,8 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 8️⃣ **Keluar dari Program** ❌  
 
 
-  ![Screenshot 2025-03-10 130351](https://github.com/user-attachments/assets/c48d4871-b3a6-45b7-b40e-fd147f6db6cd)
+![Screenshot 2025-03-10 131632](https://github.com/user-attachments/assets/a8c12199-2449-4a25-bd8f-37e8049f3e96)
+
 ![Screenshot 2025-03-10 131409](https://github.com/user-attachments/assets/b0d146e3-5d92-42f0-9e9e-106a2e06efac)
 
 
