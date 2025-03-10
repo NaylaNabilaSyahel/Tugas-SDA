@@ -251,7 +251,7 @@ Saat program dijalankan, pengguna akan disambut dengan antarmuka yang sederhana 
 
 Menambahkan nasabah ke daftar antrean
 
-![Screenshot 2025-03-10 135801](https://github.com/user-attachments/assets/82fde52c-5a68-4e32-b7b9-f17f39cd3aab)
+![Screenshot 2025-03-10 140504](https://github.com/user-attachments/assets/9a2a9f97-1613-40f3-8d28-274b9c8b3966)
 
 ### Pilihan 2
 
