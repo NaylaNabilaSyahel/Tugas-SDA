@@ -255,9 +255,59 @@ Menambahkan nasabah ke daftar antrean
 
 ### Pilihan 2
 
-Memproses nasabah 
+Memproses nasabah dalam antrean
 
-![Screenshot 2025-03-10 140328](https://github.com/user-attachments/assets/2f6ca916-18ad-41b3-a43c-187c485b2d2d)
+![Screenshot 2025-03-10 140622](https://github.com/user-attachments/assets/829d85bb-92b1-4de3-ba7d-10c745c77203)
+
+### Pilihan 3 
+
+Menampilkan antrean saat ini 
+
+![Screenshot 2025-03-10 141051](https://github.com/user-attachments/assets/a2e14634-e07b-4576-8434-aa2f3948b64a)
+
+### Pilihan 4
+
+Menampilkan riwayat layanan nasabah
+
+![Screenshot 2025-03-10 141716](https://github.com/user-attachments/assets/b9e0ec2f-814c-4de0-995c-98211f58082c)
+
+### Pilihan 5
+
+Membatalkan transaksi terakhir nasabah
+
+![Screenshot 2025-03-10 141832](https://github.com/user-attachments/assets/1a81c87f-4637-48a2-a572-916aa4e97359)
+
+### Pilihan 6
+
+Keluar dari program 
+
+![Screenshot 2025-03-10 142231](https://github.com/user-attachments/assets/2d0623ac-44d3-4760-b10a-84547c047b6f)
+
+### 🎉 Pesan Penutup Program
+
+Saat pengguna memilih keluar dari sistem, program akan menampilkan pesan perpisahan yang hangat
+
+![Screenshot 2025-03-10 142409](https://github.com/user-attachments/assets/c71e5985-9b23-4f16-b1e7-e6ae2fb7c70f)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
