@@ -139,6 +139,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 ➍ Sinkronisasi Antrean dan Riwayat
 
    - 💡 **Masalah:**
+     
       Setelah undo, nomor antrean bisa menjadi tidak berurutan.
       Data harus tetap sinkron antara antrean (nasabah aktif) dan stack (riwayat layanan).
      
