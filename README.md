@@ -132,6 +132,7 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 ➊ Kendala dalam Pengelolaan Antrean (Queue)
    - 💡Masalah:
+     
       Nasabah yang telah selesai diproses dihapus dari antrean, tetapi data nasabah yang telah diproses tidak tersimpan.
       Tidak ada mekanisme untuk membatalkan proses nasabah yang sudah dikeluarkan dari antrean.
    - ✅ Solusi:
