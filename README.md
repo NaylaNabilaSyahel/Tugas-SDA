@@ -233,9 +233,19 @@ Dalam program antrean nasabah, **Stack** diimplementasikan untuk melakukan beber
 
 ---
 
-### Alur Program 
+### 📝 Alur Program 
+
+**🌟 Tampilan Awal Program 🌟**
+
+Saat program dijalankan, pengguna disambut dengan pesan berikut
 
 ![Screenshot 2025-03-10 131737](https://github.com/user-attachments/assets/83065517-f3a0-4dc9-b04b-34a6fdcbd652)
+
+**🖥️ Antarmuka Program**
+
+![Screenshot 2025-03-10 135540](https://github.com/user-attachments/assets/87ee314a-758c-409c-85b7-be7b75bf3f27)
+
+
 
 
 
